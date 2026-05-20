@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 16</title>
+</head>
+<body>
+    <h1>Ejercicio 16</h1>
+    <p>Diseñe un formulario que solicite el nombre del empleado, las horas trabajadas y el pago por hora, y calcule el salario total.</p>
+    <h2>Formulario de salario</h2>
+    <form action="Ejercicio_16.php" method="POST">
+        <label for="nombre">Nombre del empleado:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="horas">Horas trabajadas:</label>
+        <input type="number" id="horas" name="horas" step="0.5" min="0" required><br><br>
+        <label for="pago">Pago por hora ($):</label>
+        <input type="number" id="pago" name="pago" step="0.01" min="0" required><br><br>
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
